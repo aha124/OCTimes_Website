@@ -33,21 +33,30 @@ export default function Story({ imageUrl }: StoryProps) {
 
           <div className="mt-8 space-y-5 font-body text-lg leading-relaxed text-[var(--color-ink-soft)]">
             <p>
-              We met as kids who could sing. Somewhere along the way we became something else —
-              four guys who&rsquo;ve traded chairs, traded jokes, traded turns driving the rental,
-              and somehow kept showing up to the same chord for over twenty years.
+              We met as four guys who could sing. Somewhere along the way we became something
+              else: friends who traded chairs, traded jokes, traded turns driving the rental, and
+              somehow kept showing up to the same chord for more than twenty years.
             </p>
             <p>
               In 2008 we won the Barbershop Harmony Society&rsquo;s International Quartet
-              Championship. That was a great week. Honestly, the better stuff happened before and
-              after — the late diners, the wrong-turn detours, the friends we made in every district
-              from here to wherever the next show takes us.
+              Championship. It was a great week. But if we&rsquo;re honest, the better stuff
+              happened in the margins, the late diners, the wrong-turn detours, the cities we
+              explored instead of rehearsing, the World Series game we drove to when we probably
+              should have flown home. The gig was usually the smallest part of the trip.
             </p>
             <p>
-              We&rsquo;re older now. We sing a little softer in the morning, we laugh a little
-              harder at our own jokes, and the harmonies feel more like home than ever. If you come
-              see us, you&rsquo;re not just hearing four voices. You&rsquo;re hearing a friendship
-              that just happened to find a key.
+              We made three albums along the way, <em>Let&rsquo;s Fly</em>, <em>Destinations</em>,
+              and <em>The Road</em>, and we sang in some rooms we never expected to, from Carnegie
+              Hall to the Hawaii Theater to stages across Europe and beyond. We&rsquo;re grateful
+              for all of it. In 2024 the Westminster Chorus welcomed us into its Hall of Fame, which
+              was a kind thing to do for four people who mostly just wanted to keep hanging out.
+            </p>
+            <p>
+              We sing a little softer now, and we laugh a little harder at our own jokes, and the
+              harmonies feel more like home than they used to. Our hope was never that people would
+              remember how we sang. It&rsquo;s that some quartet down the road says, &ldquo;I wish
+              ours was like OC Times.&rdquo; Meaning: they had fun. They actually liked each other.
+              When you come see us, you&rsquo;re hearing a friendship that happened to find a key.
             </p>
           </div>
 

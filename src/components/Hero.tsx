@@ -29,7 +29,7 @@ export default function Hero({ imageUrl }: HeroProps) {
       <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-[#1a1108]/85 via-[#1a1108]/40 to-transparent" />
 
       <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pb-20 pt-32 sm:pb-28 md:pb-36">
-        <p className="font-body text-[0.7rem] uppercase tracking-[0.28em] text-[var(--color-sand)]/90">
+        <p className="font-body text-[0.78rem] font-semibold uppercase tracking-[0.28em] text-[var(--color-gold-light)]">
           2008 BHS International Quartet Champions · Hall of Fame 2024
         </p>
         <h1 className="mt-4 font-display text-5xl font-semibold leading-[1.02] text-[var(--color-paper)] sm:text-6xl md:text-7xl lg:text-8xl">
@@ -45,7 +45,7 @@ export default function Hero({ imageUrl }: HeroProps) {
           <a href="#tour" className="btn-primary">
             See us live
           </a>
-          <a href="#story" className="btn-ghost border-[var(--color-paper)]/40 text-[var(--color-paper)] hover:bg-[var(--color-paper)]/10">
+          <a href="#story" className="btn-outline-light">
             Our story
           </a>
         </div>

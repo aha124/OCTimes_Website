@@ -3,30 +3,30 @@ import type { Member, MusicLinks, SiteSettings, TourDate, VideoItem } from "./ty
 export const DEFAULT_MEMBERS: Member[] = [
   {
     id: "tenor",
-    name: "Tenor",
+    name: "Shawn York",
     part: "Tenor",
-    bio: "Bio coming soon.",
+    bio: "Shawn sings the high stuff, the part that floats over the top of the chord and makes the hair on your arms stand up. Two decades in, he's still chasing that one perfect ring with the same three guys he started with.",
     order: 0,
   },
   {
     id: "lead",
-    name: "Lead",
+    name: "Sean Devine",
     part: "Lead",
-    bio: "Bio coming soon.",
+    bio: "Sean carries the melody, which means he's usually the one telling the story while the other three paint around him. He's the voice you'll find yourself humming on the drive home.",
     order: 1,
   },
   {
     id: "baritone",
-    name: "Baritone",
+    name: "Pat Claypool",
     part: "Baritone",
-    bio: "Bio coming soon.",
+    bio: "Pat sings baritone, the part nobody can hum but every quartet lives or dies by, the notes that turn three voices into a full chord. He's the glue you don't notice until it's gone.",
     order: 2,
   },
   {
     id: "bass",
-    name: "Bass",
+    name: "Cory Hunt",
     part: "Bass",
-    bio: "Bio coming soon.",
+    bio: "Cory anchors the whole thing from the bottom, the foundation the other three stand on. Big sound, bigger laugh, and the guy most likely to suggest the detour that becomes the best part of the trip.",
     order: 3,
   },
 ];
@@ -34,30 +34,26 @@ export const DEFAULT_MEMBERS: Member[] = [
 export const DEFAULT_VIDEOS: VideoItem[] = [
   {
     id: "sold",
-    youtubeId: "dQw4w9WgXcQ",
+    youtubeId: "KI11qdPmElY",
     title: "Sold (The Grundy County Auction Incident)",
-    description: "Replace this YouTube ID in the admin.",
     order: 0,
   },
   {
     id: "wagon-wheel",
-    youtubeId: "dQw4w9WgXcQ",
+    youtubeId: "xYB9c45ArKU",
     title: "Wagon Wheel",
-    description: "Replace this YouTube ID in the admin.",
     order: 1,
   },
   {
     id: "wonderful-world",
-    youtubeId: "dQw4w9WgXcQ",
+    youtubeId: "PB_BXHiYgCc",
     title: "What A Wonderful World",
-    description: "Replace this YouTube ID in the admin.",
     order: 2,
   },
   {
     id: "show-weekend",
-    youtubeId: "dQw4w9WgXcQ",
+    youtubeId: "Rutu7swXWkU",
     title: "A Show Weekend",
-    description: "Replace this YouTube ID in the admin.",
     order: 3,
   },
 ];

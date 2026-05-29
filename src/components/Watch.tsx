@@ -20,7 +20,7 @@ export default function Watch({ videos }: WatchProps) {
           {videos.map((v, i) => (
             <Reveal key={v.id} delay={i * 0.06}>
               <li>
-                <div className="relative aspect-video overflow-hidden rounded-[var(--radius-card)] bg-black shadow-[var(--shadow-warm)]">
+                <div className="card-lift relative aspect-video overflow-hidden rounded-[var(--radius-card)] bg-black shadow-[var(--shadow-warm)]">
                   <iframe
                     src={`https://www.youtube.com/embed/${v.youtubeId}?rel=0`}
                     title={v.title}
@@ -34,7 +34,7 @@ export default function Watch({ videos }: WatchProps) {
                   {v.title}
                 </h3>
                 {v.description && (
-                  <p className="mt-1 font-body text-sm text-[var(--color-ink-muted)]">
+                  <p className="mt-1 font-body text-base text-[var(--color-ink-soft)]">
                     {v.description}
                   </p>
                 )}

@@ -23,18 +23,24 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Solid cream chrome once scrolled, or whenever the mobile menu is open
+  // (so the dropdown always reads against a light background).
+  const solid = scrolled || open;
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-40 transition-all duration-300 ${
-        scrolled
-          ? "bg-[var(--color-paper)]/90 backdrop-blur border-b border-[var(--color-rule)]/60"
+        solid
+          ? "bg-[var(--color-paper)]/95 backdrop-blur border-b border-[var(--color-rule)]/60 shadow-[0_2px_20px_-12px_rgba(80,40,20,0.4)]"
           : "bg-transparent"
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a
           href="#top"
-          className="font-display text-xl font-semibold tracking-tight text-[var(--color-ink)]"
+          className={`font-display text-xl font-semibold tracking-tight transition-colors ${
+            solid ? "text-[var(--color-ink)]" : "text-[var(--color-paper)]"
+          }`}
         >
           OC Times
         </a>
@@ -44,7 +50,9 @@ export default function Nav() {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm font-medium text-[var(--color-ink-soft)] transition hover:text-[var(--color-terracotta)]"
+              className={`text-sm font-medium transition-colors hover:text-[var(--color-terracotta)] ${
+                scrolled ? "text-[var(--color-ink-soft)]" : "text-[var(--color-paper)]"
+              }`}
             >
               {l.label}
             </a>
@@ -52,23 +60,28 @@ export default function Nav() {
         </nav>
 
         <button
-          aria-label="Toggle menu"
-          className="md:hidden rounded-full p-2 text-[var(--color-ink)] hover:bg-[var(--color-sand)]"
+          aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
+          className={`md:hidden rounded-full p-2.5 transition-colors ${
+            solid
+              ? "text-[var(--color-ink)] hover:bg-[var(--color-sand)]"
+              : "text-[var(--color-paper)] hover:bg-[var(--color-paper)]/15"
+          }`}
           onClick={() => setOpen((o) => !o)}
         >
-          {open ? <X size={20} /> : <Menu size={20} />}
+          {open ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
       {open && (
         <div className="md:hidden border-t border-[var(--color-rule)]/60 bg-[var(--color-paper)]">
-          <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-3">
+          <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-3">
             {LINKS.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="rounded-lg px-2 py-2 text-sm font-medium text-[var(--color-ink-soft)] hover:bg-[var(--color-sand)]"
+                className="rounded-lg px-3 py-3.5 text-base font-medium text-[var(--color-ink-soft)] transition-colors hover:bg-[var(--color-sand)] hover:text-[var(--color-terracotta)]"
               >
                 {l.label}
               </a>

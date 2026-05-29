@@ -14,14 +14,25 @@ const inter = Inter({
   display: "swap",
 });
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://octimesquartet.com";
+const SITE_DESCRIPTION =
+  "Four voices, twenty-plus years, one long shared trip. OC Times: 2008 International Quartet Champions.";
+
 export const metadata: Metadata = {
-  title: "OC Times Quartet — Brothers on the Road",
-  description:
-    "OC Times — 2008 Barbershop Harmony Society International Quartet Champions. Four lifelong friends still singing, still on the road.",
+  metadataBase: new URL(SITE_URL),
+  title: "OC Times Quartet",
+  description: SITE_DESCRIPTION,
   openGraph: {
     title: "OC Times Quartet",
-    description: "Brothers on the road. Four voices, twenty-plus years.",
+    description: SITE_DESCRIPTION,
     type: "website",
+    siteName: "OC Times Quartet",
+    url: SITE_URL,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "OC Times Quartet",
+    description: SITE_DESCRIPTION,
   },
 };
 

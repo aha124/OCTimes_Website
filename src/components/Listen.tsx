@@ -39,7 +39,7 @@ export default function Listen({ music }: ListenProps) {
           </div>
 
           {music.catalogNote && (
-            <p className="mt-8 border-l-2 border-[var(--color-terracotta)] pl-5 font-body text-[0.95rem] italic leading-relaxed text-[var(--color-ink-muted)]">
+            <p className="mt-8 border-l-2 border-[var(--color-terracotta)] pl-5 font-body text-base italic leading-relaxed text-[var(--color-ink-soft)]">
               {music.catalogNote}
             </p>
           )}

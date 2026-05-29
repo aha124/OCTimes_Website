@@ -21,7 +21,7 @@ export default function Members({ members }: MembersProps) {
           {members.map((m, i) => (
             <Reveal key={m.id} delay={i * 0.08}>
               <li className="group">
-                <div className="relative aspect-[4/5] overflow-hidden rounded-[var(--radius-card)] bg-[var(--color-sand)] shadow-[var(--shadow-warm)]">
+                <div className="card-lift relative aspect-[4/5] overflow-hidden rounded-[var(--radius-card)] bg-[var(--color-sand)] shadow-[var(--shadow-warm)]">
                   {m.photoUrl ? (
                     <Image
                       src={m.photoUrl}
@@ -43,7 +43,7 @@ export default function Members({ members }: MembersProps) {
                   <h3 className="mt-1 font-display text-2xl font-semibold text-[var(--color-ink)]">
                     {m.name}
                   </h3>
-                  <p className="mt-3 font-body text-[0.95rem] leading-relaxed text-[var(--color-ink-soft)]">
+                  <p className="mt-3 font-body text-base leading-relaxed text-[var(--color-ink-soft)]">
                     {m.bio}
                   </p>
                 </div>
